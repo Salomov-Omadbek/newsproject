@@ -7,7 +7,7 @@
       <div class="col-lg-8 col-md-8 col-sm-8">
         <div class="slick_slider">
             {% for news in news_list %}
-          <div class="single_iteam"> <a href="{{ news.get_absolute_url }}"><img src="{{ news.images.url }}" alt="p"></a>
+          <div class="single_iteam"> <a href="{{ news.get_absolute_url }}"><img src="{{ news.images.url }}" alt=""></a>
             <div class="slider_article">
               <h2><a class="slider_tittle" href="{{ news.get_absolute_url }}">{{ news.title | truncatewords:5 }}</a></h2>
               <p>{{ news.title }}</p>
